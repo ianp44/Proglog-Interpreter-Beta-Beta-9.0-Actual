@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head><title>Ian's Ai Demo test Page 9.0 vers 9.0</title>
+
+<!--
+/*
+Ian's Ai Demo Beta Beta test Page 9.0 for menus (menus disabled) vers 9.0
+4/2/17
+
+
+This is a beta beta version of a javascript Prolog AI language interpreter.<br>
+It is not fully functional,and is in development.
+
+
+COPYRIGHT NOTICE.
+
+This code is copyright  (C)  by Ian Pouncy 18/12/16, and (version 9.0) 4/2/17.
+
+under the   GNU GENERAL PUBLIC LICENSE,  Version 3, 29 June 2007 , see Free Software Foundation, Inc. <http://fsf.org/> 
+
+ 
+
+This means you can use it if you want under the terms of that licence.
+
+
+
+This source code  has been registered on github (user name Ianp44) on 18/12/16, and (version 9.0) 4/2/17.
+
+
+
+
+*/
+
+-->
+<style type="text/css">
+
+.buttonhelpclass_z2 {
+	border: 1px solid #0F0;
+	font-family: "Courier New";
+	font-size: 12pt;
+	font-weight: bold;
+	color: #0F0;
+	background-color: #FFF;
+}
+
+.divclass5 {
+	font-family: "times New Roman";
+	font-size: 15pt;
+	color: #00F;
+	padding: 10px;
+	position: relative;
+	left: 40px;
+	top: 30px;
+	border: 2px solid #009;
+	width: 800px;
+}
+</style>
+<!--
+<style type="text/css">
+.divclass{
+position:absolute;
+width: 100px;
+height:100px;
+border: 1px solid black;
+top: 300px;
+left: 100px;
+visibility:hidden;
+/*
+background-color:red;
+visibility:hidden;
+*/
+}
+/*
+.divclass:hover{
+background-color:green;
+visibility:visible;
+
+}
+*/
+
+
+.divclass2{
+position:absolute;
+width: 100px;
+height:1.3em;
+border: 1px solid black;
+top: 300px;
+left: 100px;
+overflow:hidden;
+}
+/*
+.divclass2:hover{
+height:100px;
+
+}
+*/
+
+.testd_topc {
+	border: 1px solid #900;
+	position: absolute;
+	height: 1.3em;
+	width: 100px;
+	left: 500px;
+	top: 200px;
+}
+#testd_dropc {
+	border: 1px solid #00F;
+	position: absolute;
+	height: 100px;
+	width: 100px;
+	left: 500px;
+	top: 200px;
+}
+</style>
+-->
+<!--
+<script src="orgsite.js"> </script>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src= "ai_demo_ajax_interface9.js"></script>
+<script src= "ai_demo9_1.js"></script>
+<script src= "ai_pars9_3_1.js"></script>
+
+<script>
+function test_err4(){
+	try{
+flag_null_error("test_err4"	);
+	}
+	catch(err){
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+process_error(err);
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+function zinit7(){
+//zinit();
+zinit3();
+init_ajax(); //init routine for  ajax
+document.getElementById("maindiv").style.border='2px solid #00f';
+
+
+
+}
+function test_routine5(){
+	try{
+test_error5();
+	}
+	catch(err){
+		
+process_error(err);
+		
+	}
+	
+}
+</script>
+
+<link href="orgsite.css" rel="stylesheet" type="text/css">
+</head>
+<body onload="zinit7()">
+<!--
+<b>Ian's Javascript Drop Down Menu Demo Pages</b><br>
+  (Version 5.0 20/9/14 )<br>
+<a href="../default.htm">Up to public site</a><br><br>
+<p id="demo1"> demo1 text </p>
+-->
+<span id="spanid">Span text</span>
+
+<!--
+<div id="maindiv" class="maindivclass">
+-->
+
+<div id="maindiv" class="divclass5">
+
+
+
+
+
+
+
+
+<p><b>
+  Ian's AI Demo Beta Beta test Page 9.0 (menus removed) vers 9.0 04/2/17 ?Ok So far.</b><br>
+  <strong>By Ian Pouncy.</strong></p>
+<p><strong><br>
+    This is a beta beta demo (not fully functional) of a Javascript Prolog AI (Artificial Intelligence) language Interpreter.<br>
+  </strong>Prolog is probably a bit out of date now, but can support a lot of Artificial Intelligence functionality.<br>
+  An Interpreter is a (in this case Javascript) program that runs the Prolog program (from the Prolog program text typed in by the Prolog Programmer.)</p>
+<p> <br>
+
+  This demo can create and display a rule list. <br>
+  Also compiles and 
+  displays rule varable index list.  <br>
+Also can test the match functor functor routines for entries <br>
+on the compute stack.
+<br>
+It should handle setting the variables correctly in the calling rule stack entry<br>
+but this is not tested yet - only have checked non-variable functor examples,<br>
+OK so far. (Have the flu 7/1/17).</p>
+<p>This version can also load (but not modify) text files from the server.</p>
+<p>&nbsp;</p>
+<p><br>
+  <br>
+  <strong>COPYRIGHT NOTICE.</strong><br>
+  
+  
+  This code is copyright  (C)  by Ian Pouncy 18/12/16. and (version 9.0) 4/2/17.<br>
+  
+  under the   GNU GENERAL PUBLIC LICENSE,  Version 3, 29 June 2007 , see Free Software Foundation, Inc. <a href="http://fsf.org/" title="Link to Free Software Foundation">http://fsf.org/</a> <br>
+  and has also been  registered on git hub, (user name Ianp44) on 18/12/16, and (version 9.0) 4/2/17. For more detail see the source code.<br>
+</p>
+<p><strong>About the Test Buttons</strong><br>
+  The test and display functor routines button creates and displays some functor trees, including with proper Prolog Variables.<br>
+  <br>
+  The create rule base and display button creates some Prolog rules and puts them into the rule base, then displays the
+  entire rule base.
+  <br>
+</p>
+<p>The dump label table button displays all the internal program symbols from the label table.<br>
+  </p>
+<p>To see the program output after you have clicked the buttons, scroll down the page.</p>
+<p>The set rule button (a test button) selects the rule from the displayed rule list (only after you have<br>
+  clicked
+  the create rule base button) according to the top rule list index input value<br>
+  and the rule list index input value.<br>
+  </p>
+<p>The Try Match Button tests the compute stack entry functor match routines.<br>
+See blurb about it lower down at the button.</p>
+<p><br>
+  The point is that the rule list (that is all the rules, including facts with no tails) are organised as a list of lists (top rule list of rule lists) with the key concept being that all the rules in a rule list have<br>
+  the same head functor identifier.<br>
+  The selected rule is given (set) a entry on the compute stack, ready to be used by the matching routines to do the actual rule matching that makes Prolog work.
+</p>
+<p>You can set as many rules as you like (to a preset limit) and then display the entire compute stack<br>
+  by clicking on 
+  the display compute stack button.</p>
+<p>The display compute stack button (a test button) displays the entire compute stack.<br>
+  This includes the instantiated values of any variables, which have an link data entry <br>
+  on the compute stack if they exist in the rule.
+  <br>
+  </p>
+<p><strong>File Load Test Buttons</strong><br>
+These can load prolog text files from the server, but not modify them.<br>
+At moment files are only test files.
+<br>
+See buttons for what they do.</p>
+<p>&nbsp;</p>
+<p><br>
+  
+  
+  <!--
+<a href="../default.htm">Back to  Demos Index</a><br>
+-->
+  <br>
+  
+  <!--
+  <a href="filedump1.php?ai_beta_beta_demo4.html" title="Link to Page Filedump">View Page Source</a><br>
+  <a href="filedump1.php?ai_demo4_1.js" title="Link to Filedump">View Javascript AI Routines Include Source</a><br>
+  <a href="filedump1.php?ai_pars4_3_1.js" title="Link to Filedump">View Javascript Text Parsing Routines Include Source</a><br><br>
+  -->
+  <a href="../default.htm">Back to  Demos Index</a><br><br>
+  
+  <a href="../filedump1.php?javascript/ai_beta_beta_demo9.html" title="Link to Page Filedump">View Page Source</a><br>
+  <a href="../filedump1.php?javascript/ai_demo9_1.js" title="Link to Filedump">View Javascript AI Routines Include Source</a><br>
+  <a href="../filedump1.php?javascript/ai_pars9_3_1.js" title="Link to Filedump">View Javascript Text Parsing Routines Include Source</a><br>
+  <a href="../filedump1.php?ai_demo_ajax9_7.php" title="Link to Filedump">View File Serving Ajax PHP Page</a><br>
+
+  <a href="../filedump1.php?javascript/ai_demo_ajax_interface9.js" title="Link to Filedump">View Ajax File Load Routines Include Source</a><br><br>
+
+  <br>
+  <br>
+  
+  
+  <!--
+<button onclick="zinit3()">Do Program Init</button><br>
+--></p>
+<button onclick="test_functor()">Test and Display Functor Routines</button><br>
+<button onclick="create_rule_base()">Create Rule Base and  Display</button><br>
+<!--
+<button onclick="test_err4()">Test Null SysError</button><br>
+
+<button onclick="test_routine5()">Test Routine 5 </button><br>
+-->
+
+
+
+
+
+<button onclick="dump_labs()">Dump Label Table</button><br><br>
+<form id="data_form1">
+
+
+
+
+
+
+
+
+
+<b>Rule to Set: Top rule table ind:</b>: <input type="text" name="ind1" size="5" value="0">, 
+<b>rule table ind:</b>: <input type="text" name="ind2" size="5" value="0">
+<b>comp stack uplink index:</b>: <input type="text" name="uplink_ind" size="5" value="1">
+
+<br>
+
+</form>
+<button onclick="button_set_rule()">Set Rule</button><br><br>
+<button onclick="button_display_compute_stack()">Display Compute Stack</button><br>
+
+<form id="data_form2">
+
+  <p><b><br>
+      Try Match Test Button Control Data:<br>
+      </b>(Matches specified bottom stack entry uplinked indexed<br>
+calling rule, tail functor index top rule tail index 
+against specified bottom stack rule<br>
+head functor. )<br>
+      <br>
+  This button tests the 
+match function if you specify a lower down (greater index value) <br>
+compute stack entry (properly uplink
+  indexed to a higher (
+  lower index value)<br>
+compute stack entry and the tail index functor the  higher (
+  lower index value) calling<br>
+rule. This tests the match of the specified tail entry functor in the calling rule<br>
+against the head functor in the match rule.<br>
+<br>
+It should handle setting the variables correctly in the calling rule stack entry<br>
+but this is not tested yet - only have checked non-variable functor examples.<br>
+      OK so far. (Have the flu 7/1/17). </p>
+  Variable should be set if they exist in the two rules, which can be viewed<br>
+    by clicking display compute stack.<br>
+  <br>
+    Result of match shows in Error Status as true or false.<br>
+    <b><br>
+    Bottom Compute Stack Entry Index:</b>
+    <input type="text" name="ind1" size="5" value="0">
+    , 
+    <b>Top Rule Tail Index:</b>
+    <input type="text" name="ind2" size="5" value="0">
+    <br>
+  </form>
+
+<button onclick="button_do_match()">Try Match</button><br><br>
+
+
+<strong>File Load Test Buttons</strong><br>
+
+<button onclick="zdo_ajax_error_test_button()">Do Ajax Error Test</button> Test Ajax Communication with the Server and the server<br>
+error routines.<br>
+
+<button onclick="zload_fname_button('missing_file.txt')">Do Load Missing File</button> Tests loading an missing file.<br>
+
+
+<button onclick="zdo_directory_button()">Do File Directory List</button> Display the directory of the files on the server.<br>
+<button onclick="zload_test_button()">Load Dummy Text File Test</button> Tests the server communication and client side file<br>
+data display routines.<br><br>
+
+
+ 
+<p><b>Ajax Status:</b> <span id="ajax_status">ajax rep text</span></p>
+<p>&nbsp;</p>
+<p><b>Ajax Query Data:</b> <span id="ajax_query_status">ajax query data text</span></p>
+<p>&nbsp;</p>
+
+<p><b>Error Status:</b> <span id="errep">errrep text</span></p>
+<p>&nbsp;</p>
+
+<!--
+<p>Program Output:<br> <span id="txtHint">txt hint txt</span></p><br>
+<br>
+<br>
+-->
+
+<p><b>Program Output:</b><br>
+ <span id="disp1">disp1 text</span></p>
+<br>
+<br>
+
+<p><b>Program Output:</b><br>
+ <span id="disp2">disp2 text</span></p>
+
+<br>
+<br>
+
+</div>
+<!--
+<div id="menu_bar_div"> 
+Menu Bar Start Text
+</div>
+-->
+  
+<!---
+<div class="testd_topc" id="testd_top" onMouseOver="visswitch('testd_top','testd_dropc')">Menu4</div>
+  
+<div class="testd_dropc" id="testd_dropc" onMouseOver="visswitch('testd_top','testd_dropc')" 
+onMouseOut="visswitch('testd_dropc','testd_top')">
+Menu<br>
+Opt1<br>
+Opt2<br>
+Opt2<br>
+
+</div>
+-->
+<!--
+<p id="demo2"> demo2 text </p>
+
+-->
+<!--
+<div id="div4" style="position:absolute; width:200px;height:300px;left:15px;top:300px;">
+<b>If you hover the mouse over<br>
+the "Menu" it will reveal a drop down menu.<br>
+This can contain links.<br>
+<a href="" onmouseover="do_test()">Click me to test</a>
+End of text
+</b>
+</div>
+-->
+<!--
+<div id="div8" style="position:absolute; width:600px;left:100px;top:200px; border: 1px solid green;">
+<b>Div8 test text mark two
+</b>
+</div>
+-->
+
+<!--
+<div id="div2" class="divclass2" onmouseover="zfunc(1)"> 
+-->
+<!--
+<div id="div2" class="divclass2" onmouseover="zfunc(1)">
+<b>Menu</b><br>
+Line1a<br>
+Line2b<br>
+Line3c<br>
+
+
+</div>
+
+
+<div id="div1" class="divclass" onmouseover="zfunc(1)" onmouseout="zfunc(0)">
+
+<b>Menu</b><br>
+Entry 1<br>
+Entry 2<br>
+Entry 3<br>
+
+</div>
+-->
+
+</body>
+</html> 
